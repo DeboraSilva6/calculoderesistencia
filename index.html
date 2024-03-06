@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação Cálculo de Resistência</title>
+</head>
+<body>
+    <form>
+        <div>Faixa 01 -
+            <select id="faixa01" >
+                <option value="0" style="background-color: black;"> Preta </option>
+                <option value="1" style="background-color: rgb(82, 44, 0);"> Marrom </option>
+                <option value="2" style="background-color: red"> Vermelho </option>
+                <option value="3" style="background-color: rgb(253, 123, 1);"> Laranja  </option>
+                <option value="4" style="background-color: rgb(245, 221, 2);"> Amarelo </option>
+                <option value="5" style="background-color: rgb(15, 235, 44);"> Verde </option>
+                <option value="6" style="background-color: rgb(13, 126, 219);"> Azul </option>
+                <option value="7" style="background-color: rgb(149, 3, 247);"> Violeta </option>
+                <option value="8" style="background-color: rgb(80, 77, 77);"> Cinza </option>
+                <option value="9" style="background-color: rgb(255, 255, 255);"> Branco </option>
+            </select>
+            Faixa 02 -
+            <select id="faixa02" >
+                <option value="0" style="background-color: black;"> Preta </option>
+                <option value="1" style="background-color: rgb(82, 44, 0);"> Marrom </option>
+                <option value="2" style="background-color: red"> Vermelho </option>
+                <option value="3" style="background-color: rgb(253, 123, 1);"> Laranja  </option>
+                <option value="4" style="background-color: rgb(245, 221, 2);"> Amarelo </option>
+                <option value="5" style="background-color: rgb(15, 235, 44);"> Verde </option>
+                <option value="6" style="background-color: rgb(13, 126, 219);"> Azul </option>
+                <option value="7" style="background-color: rgb(149, 3, 247);"> Violeta </option>
+                <option value="8" style="background-color: rgb(80, 77, 77);"> Cinza </option>
+                <option value="9" style="background-color: rgb(255, 255, 255);"> Branco </option>
+            </select>
+            </select>
+            Multiplicador -
+                <select id="multi" >
+                    <option value="1" style="background-color: black;"> Preta </option>
+                    <option value="10" style="background-color: rgb(82, 44, 0);"> Marrom </option>
+                    <option value="100" style="background-color: red;"> Vermelho </option>
+                    <option value="1000" style="background-color: rgb(253, 123, 1);"> Laranja  </option>
+                    <option value="10000" style="background-color: rgb(245, 221, 2);"> Amarelo </option>
+                    <option value="100000" style="background-color: rgb(15, 235, 44);"> Verde </option>
+                    <option value="1000000" style="background-color: rgb(13, 126, 219);"> Azul </option>
+                    <option value="0.1" style="background-color: #996600;"> Dourado </option>
+                    <option value="0.01" style="background-color: #d6d6c2;"> Prata </option>
+                </select>
+                </select>
+                Tolerância -
+                 <select id="toler">
+                    <option value="0.01" style="background-color: black;"> Preta </option>
+                    <option value="0.02" style="background-color: rgb(82, 44, 0);"> Marrom </option>
+                    <option value="0.05" style="background-color: #996600;"> Dourado </option>
+                    <option value="0.1" style="background-color: #d6d6c2;"> Prata </option>
+ 
+            </select>
+        </div>
+        <button type="button" onclick="FazerCalculo()">Calcular</button>
+        <p>
+             Calcular: <input type="text" id="Final" readonly placeholder="Saída">
+        </p>
+        <p>
+           Tolerancia: <input type="text" id="tolera" readonly placeholder="Saída">
+       </p>
+    </form>  
+    <script src="script.js"></script> 
+</body>
+</html>
